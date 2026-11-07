@@ -1,8 +1,6 @@
-
 if (typeof $request === 'undefined' || !$request || !$request.headers) {
   $done({});
 }
-
 const headersToStrip = new Set([
   'x-revenuecat-etag',
   'if-none-match',
